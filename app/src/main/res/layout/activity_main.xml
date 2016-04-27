@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        tools:context="com.example.daiyiming.besselcurve.MainActivity">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp"
+                    android:layout_weight="1">
+        <com.example.daiyiming.besselcurve.views.BesselView
+                android:id="@+id/bv_display"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        <TextView
+                android:text="拖动原点改变曲线"
+                android:textColor="#333333"
+                android:alpha="0.6"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:onClick="clickToAdd"
+            android:src="@android:drawable/ic_input_add"/>
+
+</LinearLayout>
